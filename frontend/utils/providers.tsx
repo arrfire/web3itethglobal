@@ -30,7 +30,7 @@ export function Providers ({
 
   return (
     <PrivyProvider
-      appId="cm5e1jvec04vlc6i7cy790b36"
+      appId="cm6xtjj8200wxfgek89m2wto8"
       config={{
         supportedChains: isArbitrum ? [arbitrum] : [sepolia],
         appearance: {
