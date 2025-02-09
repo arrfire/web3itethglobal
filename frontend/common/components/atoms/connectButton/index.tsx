@@ -27,6 +27,7 @@ import {
 } from '@/utils/helpers';
 import { Button } from '../button';
 import { EnsResolver } from '../ensResolver';
+import toast from 'react-hot-toast';
 
 const {
   header: {
@@ -137,6 +138,24 @@ export const ConnectButton = () => {
                         >
                           {connectButtonCopy.myIdeas}
                         </Link>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (user?.wallet?.address) {
+                              navigator.clipboard.writeText(user.wallet.address);
+                              toast.success('Address copied to clipboard');
+                            }
+                          }}
+                          className={`${
+                            active ? 'bg-[#f6f6f6] text-black' : 'text-neutral-400'
+                          } group flex font-medium w-full items-center rounded-xl px-3 py-2 text-sm`}
+                        >
+                          Copy Address
+                        </button>
                       )}
                     </Menu.Item>
                     <Menu.Item>
