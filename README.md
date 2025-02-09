@@ -2,7 +2,7 @@
 
 WebIt.AI is a decentralized platform that helps turn innovative ideas into reality through blockchain-based crowdfunding and AI-powered project generation. The platform enables creators to launch their ideas as tokens, build communities, and receive funding through a unique bonding curve mechanism.
 
-## 🌟 Key Features
+## 🌟 Key Features 
 
 - AI-powered idea generation and refinement
 - Blockchain-based crowdfunding through token creation
